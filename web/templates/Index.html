@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <title>Document</title>
+    <title>Personal Portfolio</title>
 </head>
 <body>
    <nav class="navbar">
@@ -25,6 +25,9 @@
             <li><a href="#">Teams</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
     </div>
    </nav>
 
@@ -35,10 +38,58 @@
             <div class="text-1">Hello, My name is</div>
             <div class="text-1">Beth Nduta</div>
             <div class="text-3">And I'm a <span>Full Stack Developer</span></div>
+            <a href="">Hire me</a>
         </div>
     </div>
    </section>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur suscipit, adipisci sint nemo eos officia quasi quae tempore nam, eius molestias blanditiis. Quidem quo quod perspiciatis beatae fugiat molestias. Optio sit fugiat a, aut ex, molestias assumenda, dolorum accusamus dolore nesciunt maiores quod earum. Nam aliquam, impedit iusto vero inventore, aliquid nesciunt nemo asperiores et veritatis, alias officia nihil quaerat temporibus eos ab? Perferendis atque repudiandae iure suscipit nam incidunt quasi? Ipsum maiores, voluptatibus distinctio neque eum modi commodi doloribus alias, mollitia, dicta ex quo illo explicabo libero ullam facere fuga? Et, sequi! Repellat mollitia ut laboriosam iste aperiam enim?</p>
+
+   <!-- about section -->
+   <section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">About me</h2>
+        <div class="about-content">
+           <div class="column left">
+            <img src="{%static 'img/Portfolio.jpg' %}" alt="">
+           </div>
+           <div class="column right">
+            <div class="text">I'm Beth Nduta and I'm a <span>Web Developer</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore exercitationem, ex molestias modi veritatis nisi voluptas cum alias quam delectus?</p>
+            <a href="#">Download CV</a>
+           </div>
+        </div>
+    </div>
+   </section>
+
+   <!-- services -->
+   <section class="services" id="services">
+    <div class="max-width">
+        <h2 class="title">My Services</h2>
+        <div class="serv-content">
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-paint-brush"></i>
+                    <div class="text">Web Design</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, asperiores.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-chart-line"></i>
+                    <div class="text">Advertising</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, asperiores.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-code"></i>
+                    <div class="text">Apps Design</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, asperiores.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   
 
 <script src="{% static 'js/index.js' %}"></script>
 </body>
