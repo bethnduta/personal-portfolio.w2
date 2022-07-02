@@ -13,5 +13,11 @@ $('.menu-btn').click(function(){
     $('.navbar .menu i').toggleClass("active");
 });
 
+// owl carousel script
+$('.carousel').owlCarousel({
+    
 });
+
+});
+
 
