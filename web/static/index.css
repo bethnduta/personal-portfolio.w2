@@ -119,11 +119,19 @@ padding: 30px 0;
 }
 
 /* about section */
-.about{
+.about, .services, .skills{
     font-family: 'Poppins', sans-serif;
 }
 
-.about .title{
+
+.about .about-content, .services .serv-content, .skills{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title{
     text-align: center;
     font-size: 40px;
     position: relative;
@@ -133,7 +141,7 @@ padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.about .title::before{
+section .title::before{
     content:"";
     position: absolute;
     bottom: 0px;
@@ -144,8 +152,7 @@ padding: 30px 0;
     transform: translateX(-50%);
 }
 
-.about .title::after{
-    content:"who I am";
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -156,12 +163,10 @@ padding: 30px 0;
     transform: translateX(-50%);
 }
 
-.about .about-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+.about .title::after{
+    content:"who I am";
 }
+
 .about .about-content .left{
     width: 45%;
 }
@@ -208,7 +213,56 @@ padding: 30px 0;
     background: none;
 }
 
+/* services section */
+.services{
+    color: #fff;
+    background: #1111;
+}
+.services .title::before{
+    background: #fff;
+}
+.services .title::after{
+    background: #111;
+    content: "what I provide";
+}
 
+.services .serv-content .card{
+    width: calc(33% -20px);
+    background: #2222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serve-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services.serve-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serve-content .card:hover i{
+    color: #fff;
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+}
+/* skills section styling */
+.skills .title::after{
+    content: "what I know";
+}
+.skills .skills-content .column{
+    width: calc(50% -30px);
+}
 
 
 /* responsiveness */
@@ -289,6 +343,12 @@ padding: 30px 0;
     }
     .home .home-content .text-3{
         font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+    .services .serv-content .card{
+        width: 100%;
     }
 
 @media (max-width: 500px){
